@@ -3,7 +3,7 @@ import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub } from 'react
 import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white pt-14">
+    <footer className="bg-gray-800 text-white pt-14 pb-4">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="mb-6 md:mb-0">
           <h2 className="text-2xl font-bold mb-4">Quick Links</h2>
