@@ -1,0 +1,48 @@
+
+[
+  {
+    "title": "Website for NexSky",
+    "description": "Recently I have got an oppertuinity to create a fully functional website for NexSky (an IT Company) using React. This website contains the Home page, About, Contact, Members, Projects and Contact Us Page as well. It was one of my best project",
+    "image": "Projects/nexsky.JPG",
+    "liveLink": "https://nexsky.netlify.app/",
+    "githubLink": "https://github.com/Alikhan23M/NexSky---IT-Solutions"
+  },
+  {
+    "title": "Doctor Portal",
+    "description": "This was my secon Full Stack Project which has two front Ends one for doctor and another for User. In doctor Portal doctory can securly signup along with uploading his profile image and other details and doctor can see and manage all his appointemnts.",
+    "image": "Projects/doctorapp.JPG",
+    "liveLink": "https://becomeadoctor.netlify.app/",
+    "githubLink": "https://github.com/Alikhan23M/Hospital-doctor-app"
+  },
+    {
+      "title": "User Portal",
+      "description": "This is the second Front End of the Hospital management website. It is user portal where user can see all the available doctors along with their images and user can take and track appointments. In this project I learned how to contol complexity in backend",
+      "image": "Projects/userapp.JPG",
+      "liveLink": "https://takeappointment.netlify.app/",
+      "githubLink": "https://github.com/Alikhan23M/hospital-user-app"
+    },
+    {
+      "title": "iNotebook",
+      "description": "This was my first MERN Stack Project. It is an iNotebook where user can securly login and signup and can store, update and delte notes. Each user will have access only to his own notes. In this project I learned about Node.js Mongo DB and Authorization as well.",
+      "image": "Projects/P3.JPG",
+      "liveLink": "https://nexsky.netlify.app/",
+      "githubLink": "https://github.com/Alikhan23M/NexSky---IT-Solutions"
+    },
+    {
+      "title": "Text Analyzer",
+      "description": "This was my first Project when I started learning React Js. This web app basically analize the text and tell the user that how many words, character, sentences, paragraphs and punctuations are there. User can remove extra spaces, convert to upper or lover case and so many things. ",
+      "image": "Projects/P2.JPG",
+      "liveLink": "https://alikhan23m.github.io/Text-Analyzer/",
+      "githubLink": "https://github.com/Alikhan23M/Text-Analyzer"
+    },
+    {
+      "title": "Simple Product Landing Page",
+      "description": "This was my first Responsive Project I have created for Anabeya Collectios. In this Project I learned how to create responsive product landing page and how to redirect a user to whatsapp and automatically sending the details of the product to the seller",
+      "image": "Projects/P1.JPG",
+      "liveLink": "https://alikhan23m.github.io/anabeya-collections/",
+      "githubLink": "https://github.com/Alikhan23M/anabeya-collections"
+    }
+    
+    
+  ]
+  
