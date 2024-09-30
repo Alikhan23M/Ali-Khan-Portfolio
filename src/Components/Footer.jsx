@@ -3,19 +3,19 @@ import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub } from 'react
 import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white pt-14 pb-4">
+    <footer className="bg-gray-800 text-white pt-14 pb-4 px-3">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
-        <div className="mb-6 md:mb-0">
+        <div className="mb-6 md:mb-0 text-center">
           <h2 className="text-2xl font-bold mb-4">Quick Links</h2>
           <ul>
-            <li className="mb-2"><a href="#home" className="hover:underline">Home</a></li>
-            <li className="mb-2"><a href="#about" className="hover:underline">About</a></li>
-            <li className="mb-2"><a href="#Skills" className="hover:underline">Skills</a></li>
-            <li className="mb-2"><a href="#contact" className="hover:underline">Contact</a></li>
-            <li className="mb-2"><Link to="/projects" className="hover:underline">Contact</Link></li>
+            <li className="mb-2"><a href="/" className="hover:underline text-center">Home</a></li>
+            <li className="mb-2"><a href="#about" className="hover:underline text-center">About</a></li>
+            <li className="mb-2"><a href="#Skills" className="hover:underline text-center">Skills</a></li>
+            <li className="mb-2"><a href="#contact" className="hover:underline text-center">Contact</a></li>
+            <li className="mb-2"><a href="/projects" className="hover:underline text-center">Projects</a></li>
           </ul>
         </div>
-        <div className="mb-6 md:mb-0">
+        <div className="mb-6 md:mb-0 ">
           <h2 className="text-2xl font-bold mb-4">Contact Information</h2>
           <p className="mb-2 cursor-pointer"><FaEnvelope className="text-2xl text-center" />
           <Link to={'mailto:alikhan9327224@gmail.com'} className="mt-2 text-center hover:underline hover:decoration-black transition duration-3 ease underline decoration-white" target="_blank" rel="noopener noreferrer" >alikhan9327224@gmail.com</Link></p>

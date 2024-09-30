@@ -1,21 +1,32 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FaEnvelope, FaLinkedin, FaPhone } from 'react-icons/fa';
 
 const navLinks = [
-  { title: 'Home', link: '/', isRoute: true },
-  { title: 'Skills', link: '#Skills', isRoute: false },
-  { title: 'About', link: '#about', isRoute: false },
-  { title: 'Contact', link: '#contact', isRoute: false },
-  { title: 'Projects', link: '/projects', isRoute: true },
+  { title: 'Home', link: '/',  scrollTo: 'Skills' },
+  { title: 'Skills', link: '#Skills', scrollTo: 'Skills' },
+  { title: 'About', link: '#about',  scrollTo: 'about' },
+  { title: 'Contact', link: '#contact',  scrollTo: 'contact' },
+  { title: 'Projects', link: '/projects'},
 ];
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
+  const navigate = useNavigate();
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
+  };
+
+  const handleScroll = (scrollTo) => {
+    navigate('/');
+    setTimeout(() => {
+      const element = document.getElementById(scrollTo);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100); // Adjust the timeout as needed
   };
 
   return (
@@ -37,27 +48,21 @@ const Navbar = () => {
           }`}
         >
           <ul className="mt-16 flex flex-col space-y-8 px-6 py-6 lg:mt-0 lg:flex-row lg:space-x-8 lg:space-y-0 lg:px-0 text-center">
-            {navLinks.map(({ title, link, isRoute }, index) => (
+            {navLinks.map(({ title, link, isRoute, scrollTo }, index) => (
               <li key={index} className="group">
-                {isRoute ? (
-                  <Link
-                    to={link}
-                    className="relative p-2 text-lg font-medium transition-all duration-300 ease-in-out hover:text-blue-600 lg:text-base"
-                    onClick={() => setShowNavbar(false)}
-                  >
-                    {title}
-                    <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-blue-600 transition-all duration-300 ease-in-out group-hover:w-full"></span>
-                  </Link>
-                ) : (
+                 
                   <a
                     href={link}
                     className="relative p-2 text-lg font-medium transition-all duration-300 ease-in-out hover:text-blue-600 lg:text-base"
-                    onClick={() => setShowNavbar(false)}
+                    onClick={() => {
+                      setShowNavbar(false);
+                      handleScroll(scrollTo);
+                    }}
                   >
                     {title}
                     <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-blue-600 transition-all duration-300 ease-in-out group-hover:w-full"></span>
                   </a>
-                )}
+             
               </li>
             ))}
             <div className="mt-4 flex justify-center space-x-4 lg:mt-0 lg:justify-end">
