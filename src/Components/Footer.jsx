@@ -1,18 +1,30 @@
 import React from 'react';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+
+import { Link, useNavigate } from 'react-router-dom';
 const Footer = () => {
+  const navigate = useNavigate();
+  const handleScroll = (scrollTo) => {
+    navigate('/');
+    setTimeout(() => {
+      const element = document.getElementById(scrollTo);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100); // Adjust the timeout as needed
+  };
+
   return (
     <footer className="bg-gray-800 text-white pt-14 pb-4 px-3">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="mb-6 md:mb-0 text-center">
           <h2 className="text-2xl font-bold mb-4">Quick Links</h2>
           <ul>
-            <li className="mb-2"><a href="/" className="hover:underline text-center">Home</a></li>
-            <li className="mb-2"><a href="#about" className="hover:underline text-center">About</a></li>
-            <li className="mb-2"><a href="#Skills" className="hover:underline text-center">Skills</a></li>
-            <li className="mb-2"><a href="#contact" className="hover:underline text-center">Contact</a></li>
-            <li className="mb-2"><a href="/projects" className="hover:underline text-center">Projects</a></li>
+            <li className="mb-2"><a onClick={handleScroll} href="/" className="hover:underline text-center">Home</a></li>
+            <li className="mb-2"><a onClick={handleScroll} href="#about" className="hover:underline text-center">About</a></li>
+            <li className="mb-2"><a onClick={handleScroll} href="#Skills" className="hover:underline text-center">Skills</a></li>
+            <li className="mb-2"><a onClick={handleScroll} href="#contact" className="hover:underline text-center">Contact</a></li>
+            <li className="mb-2"><a onClick={handleScroll} href="/projects" className="hover:underline text-center">Projects</a></li>
           </ul>
         </div>
         <div className="mb-6 md:mb-0 ">
