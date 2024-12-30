@@ -105,7 +105,7 @@ const Hero = () => {
 
                     <div className="mt-6 flex justify-center md:justify-start space-x-4">
 
-                        <a href="https://github.com/Alikhan23M" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/AliKhan-Devs" target="_blank" rel="noopener noreferrer">
                             <FaGithub size="2em" className="text-white hover:text-black hover:bg-white" />
                         </a>
 
