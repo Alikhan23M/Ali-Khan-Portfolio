@@ -38,6 +38,7 @@ const Projects = () => {
           </div>
         </div>
       </section>
+      {document.title = 'Ali Khan | Projects'}
     </>
   );
 };
