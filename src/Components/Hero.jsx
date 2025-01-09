@@ -151,7 +151,7 @@ const Hero = () => {
 
            {/* ====================== About Section =======================*/}
 
-           <section id="About" className="about bg-black text-white py-24" style={{scrollMarginTop:'80px'}}>
+           <section id="About" className="about bg-black text-white py-24" style={{scrollMarginTop:'30px'}}>
   <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-8">
     <div className="w-full md:w-1/2 flex justify-center md:justify-center py-2">
       <img
@@ -193,7 +193,7 @@ const Hero = () => {
 
            {/* ====================== Contact Section =======================*/}
 
-            <section id='Contact' className='pt-6' style={{scrollMarginTop:'120px'}}>
+            <section id='Contact' className='pt-6' style={{scrollMarginTop:'70px'}}>
 
                 <div className="relative body-background bg-gray-100 p-3 w-full"> 
                     <div className="absolute inset-0 bg-cover bg-center opacity-30"></div>
