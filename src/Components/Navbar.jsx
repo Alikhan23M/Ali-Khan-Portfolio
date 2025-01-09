@@ -6,8 +6,8 @@ import { FaEnvelope, FaLinkedin, FaPhone } from 'react-icons/fa';
 const navLinks = [
   { title: 'Home', link: '/',  scrollTo: 'Skills' },
   { title: 'Skills', link: '#Skills', scrollTo: 'Skills' },
-  { title: 'About', link: '#about',  scrollTo: 'about' },
-  { title: 'Contact', link: '#contact',  scrollTo: 'contact' },
+  { title: 'About', link: '#about',  scrollTo: 'About' },
+  { title: 'Contact', link: '#contact',  scrollTo: 'Contact' },
   { title: 'Projects', link: '/projects'},
 ];
 

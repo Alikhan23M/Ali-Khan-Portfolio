@@ -48,7 +48,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="text-center mt-8">
-        <p>© 2024 Ali Khan. All rights reserved.</p>
+        <p>© 2025 Ali Khan. All rights reserved.</p>
       </div>
     </footer>
   );

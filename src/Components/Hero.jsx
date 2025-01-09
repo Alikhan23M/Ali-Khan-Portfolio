@@ -1,3 +1,4 @@
+
 // src/components/Hero.js
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -28,6 +29,7 @@ const skills = [
 
 const Hero = () => {
 
+    
 // =========================== Contact Form Setting
 
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -81,18 +83,19 @@ const Hero = () => {
             {/* ====================== Hero Section =======================*/}
 
 
-            <section id='home' className="hero bg-black flex flex-col md:flex-row items-center justify-center text-center md:text-left text-white px-4 md:px-8 relative pt-20 md:pt-0 pb-20 md:pb-0 pt-20 md:pt-48"
+            <section id='home' className="hero bg-black flex flex-col md:flex-row items-center justify-center text-center md:text-left text-white px-4 md:px-8 relative p-12 md:p-24 py-20"
             >
-                <img className="rounded-full w-64 h-64 md:w-96 md:h-96 mb-8 mt-3 md:mb-0 md:mb-8 md:ml-8 order-1 md:order-2 shadow-xl shadow-blue-600" src={Profile} alt="Ali Khan" />
+                <img className="rounded-full w-64 h-64 md:w-96 md:h-96  mt-3 md:mb-0 md:ml-8 order-1 md:order-2 shadow-xl shadow-blue-600" src={Profile} alt="Ali Khan " />
 
-                <div className="hero-content max-w-4xl mx-auto mt-20 md:mt-0 order-2 md:order-1">
+                <div className="px-2 hero-content max-w-4xl mx-auto mt-24 md:mt-0 order-2 md:order-1">
                     <Typewriter
-                        textStyle={{ fontFamily: 'Arial', color: '#FFFFFF', fontWeight: 'bold', fontSize: '2em' }}
+                        
+                        textStyle={{padding: '0px 14px', fontFamily: 'Arial', color: '#FFFFFF', fontWeight: 'bold', fontSize: window.innerWidth>=768 ? '3rem' : '1.7em' }}
                         startDelay={100}
                         cursorColor="#FFFFFF"
                         multiText={[
                             "Hi, I'm Ali Khan",
-                            "Full-Stack Developer",
+                            "MERN-Stack Developer",
                             "React Enthusiast"
                         ]}
                         multiTextDelay={1000}
@@ -101,10 +104,11 @@ const Hero = () => {
                         multiTextLoop
                     />
 
-                    <p className="mt-4 text-lg text-justify px-3">I am passionate about creating efficient and scalable web applications. With a strong background in both front-end and back-end development, I strive to deliver seamless user experiences.</p>
+                    <p className="mt-4 text-lg md:text-2xl text-justify px-3">I am passionate about creating efficient and scalable web applications. With a strong background in both front-end and back-end development, I strive to deliver seamless user experiences.</p>
 
-                    <div className="mt-6 flex justify-center md:justify-start space-x-4">
+                    <div className="mt-10 flex flex-col gap-4 justify-center items-center  space-x-6">
 
+                        <div className='flex gap-8'>
                         <a href="https://github.com/AliKhan-Devs" target="_blank" rel="noopener noreferrer">
                             <FaGithub size="2em" className="text-white hover:text-black hover:bg-white" />
                         </a>
@@ -112,16 +116,17 @@ const Hero = () => {
                         <a href="https://www.linkedin.com/in/ali-khan-972758316?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
                             <FaLinkedin size="2em" className="text-white hover:text-blue-700 hover:bg-white" />
                         </a>
+                        </div>
 
-                    </div>
                     <Link to={'/projects'}><button type="button" className="text-white bg-blue-600 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mt-4">View My Work</button></Link>
+                    </div>
 
                 </div>
             </section>
             
 {/* ====================== Skills Section =======================*/}
 
-            <section id='Skills' className="skills bg-gray-100 py-20">
+            <section id='Skills' className="skills bg-gray-100 py-20 ">
 
                 <div className="container mx-auto text-center">
 
@@ -146,9 +151,9 @@ const Hero = () => {
 
            {/* ====================== About Section =======================*/}
 
-           <section id="about" className="about bg-black text-white py-20">
+           <section id="About" className="about bg-black text-white py-24" style={{scrollMarginTop:'100px'}}>
   <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-8">
-    <div className="w-full md:w-1/2 flex justify-center md:justify-center">
+    <div className="w-full md:w-1/2 flex justify-center md:justify-center py-2">
       <img
         className="w-48 h-48 md:w-80 md:h-80 mb-6 md:mb-0 shadow-xl shadow-blue-600 rounded-full object-cover aspect-square"
         src={Profile}
@@ -161,7 +166,7 @@ const Hero = () => {
       Hi, I’m Ali Khan, a passionate full stack developer currently pursuing a degree in Computer Software Engineering at UET Mardan. I am a third-semester student with a strong foundation in both front-end and back-end technologies.
       </p>
       <p className="text-lg mb-4 px-3 text-justify">
-      My key skills include proficiency in React, Node.js, and C++. I enjoy tackling complex problems and building unique projects that showcase my technical abilities and creativity.
+      My key skills include proficiency in React, Node.js, Tailwind CSS, MongoDB, Express.js, JavaScript, and C++. I enjoy tackling complex problems and building unique projects that showcase my technical abilities and creativity.
       </p>
       <p className="text-lg mb-4 px-3 text-justify">
       Looking ahead, I am eager to gain expertise in machine learning and artificial intelligence. My goal is to continuously learn and grow, taking on new challenges that push the boundaries of my knowledge and skills.
@@ -188,7 +193,7 @@ const Hero = () => {
 
            {/* ====================== Contact Section =======================*/}
 
-            <section id='contact' className='pt-6'>
+            <section id='Contact' className='pt-6' style={{scrollMarginTop:'160px'}}>
 
                 <div className="relative body-background bg-gray-100 p-3 w-full"> 
                     <div className="absolute inset-0 bg-cover bg-center opacity-30"></div>
