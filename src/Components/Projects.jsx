@@ -10,7 +10,7 @@ const Projects = () => {
     <>
       <ProjectsHero />
       <section className="projects bg-gradient-to-br from-blue-100 via-white to-blue-100 py-16">
-        <div className="container mx-auto px-6 lg:px-12">
+        <div className="container mx-auto px-2 lg:px-12">
           <div className="space-y-12">
             {projects.map((project, index) => (
               <div
