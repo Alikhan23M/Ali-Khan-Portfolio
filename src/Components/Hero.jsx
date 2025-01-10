@@ -83,7 +83,7 @@ const Hero = () => {
             {/* ====================== Hero Section =======================*/}
 
 
-            <section id='home' className="hero bg-black flex flex-col md:flex-row items-center justify-center text-center md:text-left text-white px-4 md:px-8 relative p-12 md:p-24 py-20"
+            <section id='home' className="hero bg-black flex flex-col md:flex-row items-center justify-center text-center md:text-left text-white px-4 md:px-8 relative p-12 md:py-36 py-20"
             >
                 <img className="rounded-full w-64 h-64 md:w-96 md:h-96  mt-3 md:mb-0 md:ml-8 order-1 md:order-2 shadow-xl shadow-blue-600" src={Profile} alt="Ali Khan " />
 
