@@ -90,7 +90,7 @@ const Hero = () => {
                 <div className="px-2 hero-content max-w-4xl mx-auto mt-24 md:mt-0 order-2 md:order-1">
                     <Typewriter
                         
-                        textStyle={{padding: '0px 14px', fontFamily: 'Arial', color: '#FFFFFF', fontWeight: 'bold', fontSize: window.innerWidth>=768 ? '3rem' : '1.7em' }}
+                        textStyle={{padding: '0px 14px', fontFamily: 'Arial', color: '#FFFFFF', fontWeight: 'bold', fontSize: window.innerWidth>=768 ? '3rem' : '1.5rem' }}
                         startDelay={100}
                         cursorColor="#FFFFFF"
                         multiText={[
@@ -151,7 +151,7 @@ const Hero = () => {
 
            {/* ====================== About Section =======================*/}
 
-           <section id="About" className="about bg-black text-white py-24" style={{scrollMarginTop:'30px'}}>
+           <section id="About" className="about bg-black text-white py-24" style={{scrollMarginTop:'18px'}}>
   <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-8">
     <div className="w-full md:w-1/2 flex justify-center md:justify-center py-2">
       <img
@@ -193,7 +193,7 @@ const Hero = () => {
 
            {/* ====================== Contact Section =======================*/}
 
-            <section id='Contact' className='pt-6' style={{scrollMarginTop:'70px'}}>
+            <section id='Contact' className='pt-6' style={{scrollMarginTop:'38px'}}>
 
                 <div className="relative body-background bg-gray-100 p-3 w-full"> 
                     <div className="absolute inset-0 bg-cover bg-center opacity-30"></div>
