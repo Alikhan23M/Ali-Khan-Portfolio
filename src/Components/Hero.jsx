@@ -168,7 +168,7 @@ const Hero = () => {
       Hi, I’m Ali Khan, a passionate full stack developer currently pursuing a degree in Computer Software Engineering at UET Mardan. I am a Fourth-semester student with a strong foundation in both front-end and back-end technologies.
       </p>
       <p className="text-lg mb-4 px-3 text-justify">
-      My key skills include proficiency in React, Node.js, Tailwind CSS, MongoDB, Express.js, JavaScript, and C++. I enjoy tackling complex problems and building unique projects that showcase my technical abilities and creativity.
+      My key skills include proficiency in React, Next js, React Three Fiber Node.js, Tailwind CSS, MongoDB, Express.js, JavaScript, and C++. I enjoy tackling complex problems and building unique projects that showcase my technical abilities and creativity.
       </p>
       <p className="text-lg mb-4 px-3 text-justify">
       Looking ahead, I am eager to gain expertise in machine learning and artificial intelligence. My goal is to continuously learn and grow, taking on new challenges that push the boundaries of my knowledge and skills.
