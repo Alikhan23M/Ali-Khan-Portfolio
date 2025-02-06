@@ -3,12 +3,15 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaWhatsapp, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaWhatsapp, FaMapMarkerAlt,FaN } from 'react-icons/fa';
 import { faReact, faNodeJs, faJsSquare, faHtml5, faCss3Alt, faGithub, faSearchengin } from '@fortawesome/free-brands-svg-icons';
 import { SiTailwindcss, SiBootstrap, SiMongodb } from 'react-icons/si';
+import nextjs from '../Assets/next-js.svg'
+import threejs from '../Assets/Three.js_Icon.svg.png'
 import Typewriter from 'react-typewriter-effect';
 import Profile from '../Assets/Ali Khan.png';
 import { Link } from 'react-router-dom';
+
 
 // Add the FontAwesome icons to the library
 library.add(faReact, faNodeJs, faJsSquare, faHtml5, faCss3Alt, faGithub);
@@ -16,14 +19,17 @@ library.add(faReact, faNodeJs, faJsSquare, faHtml5, faCss3Alt, faGithub);
 const skills = [
     { icon: faHtml5, name: 'HTML', color: '#E34F26' },
     { icon: faCss3Alt, name: 'CSS', color: '#1572B6' },
+    { icon: faJsSquare, name: 'JavaScript', color: '#F7DF1E' },
     { icon: SiBootstrap, name: 'Bootstrap', color: '#7952B3' },
     { icon: SiTailwindcss, name: 'Tailwind', color: '#38B2AC' },
-    { icon: faJsSquare, name: 'JavaScript', color: '#F7DF1E' },
-    { icon: faReact, name: 'React', color: '#61DAFB' },
     { icon: faNodeJs, name: 'Node.js', color: '#339933' },
+    { icon: faReact, name: 'React', color: '#61DAFB' },
+    // { icon: nextjs, name: 'Next.js', color: '' },
     { icon: SiMongodb, name: 'MongoDB', color: '#47A248' },
+    // { icon: threejs, name: 'Three.js', color: '' },
     { icon: faGithub, name: 'GitHub', color: '#181717' },
     { icon: faSearchengin, name: 'SEO', color: '#FF5722' },
+
 ];
 
 
@@ -96,9 +102,7 @@ const Hero = () => {
                         multiText={[
                             "Hi, I'm Ali Khan",
                             "MERN-Stack Developer",
-                            "React Enthusiast",
-                            "Next js Developer",
-                            "R3F Enthusiast",
+                            "React Enthusiast"
                         ]}
                         multiTextDelay={1000}
                         typeSpeed={100}
@@ -134,9 +138,9 @@ const Hero = () => {
 
                     <h2 className="text-3xl font-bold mb-8 text-blue-600">My Skills</h2>
 
-                    <div className="flex flex-wrap justify-center">
+                    <div className="flex flex-wrap justify-center items-center align-center">
                         {skills.map((skill, index) => (
-                            <div key={index} className="m-4">
+                            <div key={index} className="m-4 flex flex-col items-center justify-center">
                                 {skill.icon.prefix ? (
                                     <FontAwesomeIcon icon={skill.icon} size="3x" style={{ color: skill.color }} className="cursor-pointer zoom" />
                                 ) : (
@@ -145,6 +149,15 @@ const Hero = () => {
                                 <p className="mt-2 text-lg">{skill.name}</p>
                             </div>
                         ))}
+                        <div className='m-4'>
+                        <img src={nextjs} alt="next js" className='h-12 cursor-pointer zoom' />
+                        <label htmlFor="nextjs" className='text-lg mt-2'>Next Js</label>
+                        </div>
+                        <div className='m-4'>
+                        <img src={threejs} alt="three js" className='h-12 cursor-pointer zoom' />
+                        <label htmlFor="nextjs" className='text-lg mt-2'>Next Js</label>
+                        </div>
+                        
                     </div>
 
                 </div>
@@ -153,7 +166,7 @@ const Hero = () => {
 
            {/* ====================== About Section =======================*/}
 
-           <section id="About" className="about bg-black text-white py-24" style={{scrollMarginTop:'18px'}}>
+           <section id="About" className="about bg-black text-white py-24" style={{scrollMarginTop:'100px'}}>
   <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-8">
     <div className="w-full md:w-1/2 flex justify-center md:justify-center py-2">
       <img
@@ -165,10 +178,10 @@ const Hero = () => {
     <div className="w-full md:w-2/3 p-4 flex flex-col justify-center items-center md:items-start text-center md:text-left">
       <h2 className="text-4xl font-bold mb-6">About Me</h2>
       <p className="text-lg mb-4 px-3 text-justify">
-      Hi, I’m Ali Khan, a passionate full stack developer currently pursuing a degree in Computer Software Engineering at UET Mardan. I am a Fourth-semester student with a strong foundation in both front-end and back-end technologies.
+      Hi, I’m Ali Khan, a passionate full stack developer currently pursuing a degree in Computer Software Engineering at UET Mardan. I am a third-semester student with a strong foundation in both front-end and back-end technologies.
       </p>
       <p className="text-lg mb-4 px-3 text-justify">
-      My key skills include proficiency in React, Next js, React Three Fiber Node.js, Tailwind CSS, MongoDB, Express.js, JavaScript, and C++. I enjoy tackling complex problems and building unique projects that showcase my technical abilities and creativity.
+      My key skills include proficiency in React, Node.js, Tailwind CSS, MongoDB, Express.js, JavaScript, and C++. I enjoy tackling complex problems and building unique projects that showcase my technical abilities and creativity.
       </p>
       <p className="text-lg mb-4 px-3 text-justify">
       Looking ahead, I am eager to gain expertise in machine learning and artificial intelligence. My goal is to continuously learn and grow, taking on new challenges that push the boundaries of my knowledge and skills.
@@ -195,7 +208,7 @@ const Hero = () => {
 
            {/* ====================== Contact Section =======================*/}
 
-            <section id='Contact' className='pt-6' style={{scrollMarginTop:'38px'}}>
+            <section id='Contact' className='pt-6' style={{scrollMarginTop:'160px'}}>
 
                 <div className="relative body-background bg-gray-100 p-3 w-full"> 
                     <div className="absolute inset-0 bg-cover bg-center opacity-30"></div>
