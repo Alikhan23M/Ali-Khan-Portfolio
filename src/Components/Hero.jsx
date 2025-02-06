@@ -16,10 +16,10 @@ library.add(faReact, faNodeJs, faJsSquare, faHtml5, faCss3Alt, faGithub);
 const skills = [
     { icon: faHtml5, name: 'HTML', color: '#E34F26' },
     { icon: faCss3Alt, name: 'CSS', color: '#1572B6' },
-    { icon: faJsSquare, name: 'JavaScript', color: '#F7DF1E' },
-    { icon: faReact, name: 'React', color: '#61DAFB' },
     { icon: SiBootstrap, name: 'Bootstrap', color: '#7952B3' },
     { icon: SiTailwindcss, name: 'Tailwind', color: '#38B2AC' },
+    { icon: faJsSquare, name: 'JavaScript', color: '#F7DF1E' },
+    { icon: faReact, name: 'React', color: '#61DAFB' },
     { icon: faNodeJs, name: 'Node.js', color: '#339933' },
     { icon: SiMongodb, name: 'MongoDB', color: '#47A248' },
     { icon: faGithub, name: 'GitHub', color: '#181717' },
@@ -96,7 +96,9 @@ const Hero = () => {
                         multiText={[
                             "Hi, I'm Ali Khan",
                             "MERN-Stack Developer",
-                            "React Enthusiast"
+                            "React Enthusiast",
+                            "Next js Developer",
+                            "R3F Enthusiast",
                         ]}
                         multiTextDelay={1000}
                         typeSpeed={100}
@@ -163,7 +165,7 @@ const Hero = () => {
     <div className="w-full md:w-2/3 p-4 flex flex-col justify-center items-center md:items-start text-center md:text-left">
       <h2 className="text-4xl font-bold mb-6">About Me</h2>
       <p className="text-lg mb-4 px-3 text-justify">
-      Hi, I’m Ali Khan, a passionate full stack developer currently pursuing a degree in Computer Software Engineering at UET Mardan. I am a third-semester student with a strong foundation in both front-end and back-end technologies.
+      Hi, I’m Ali Khan, a passionate full stack developer currently pursuing a degree in Computer Software Engineering at UET Mardan. I am a Fourth-semester student with a strong foundation in both front-end and back-end technologies.
       </p>
       <p className="text-lg mb-4 px-3 text-justify">
       My key skills include proficiency in React, Node.js, Tailwind CSS, MongoDB, Express.js, JavaScript, and C++. I enjoy tackling complex problems and building unique projects that showcase my technical abilities and creativity.
