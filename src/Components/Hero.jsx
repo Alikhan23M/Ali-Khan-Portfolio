@@ -155,7 +155,7 @@ const Hero = () => {
                         </div>
                         <div className='m-4'>
                         <img src={threejs} alt="three js" className='h-12 cursor-pointer zoom' />
-                        <label htmlFor="nextjs" className='text-lg mt-2'>Next Js</label>
+                        <label htmlFor="nextjs" className='text-lg mt-2'>R3F</label>
                         </div>
                         
                     </div>
