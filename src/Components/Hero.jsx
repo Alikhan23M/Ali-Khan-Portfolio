@@ -126,7 +126,11 @@ const Hero = () => {
                         </a>
                         </div>
 
+                   <div className='flex gap-2'>
                     <Link to={'/projects'}><button type="button" className="text-white bg-blue-600 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mt-4">View My Work</button></Link>
+                    
+                    <a href="/Ali Khan Resume.pdf" target='_blank'><button type="button" className="text-white bg-blue-600 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mt-4">Download CV</button></a>
+                    </div>
                     </div>
 
                 </div>
