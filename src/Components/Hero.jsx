@@ -220,7 +220,7 @@ const Hero = () => {
                     <div className="absolute inset-0 bg-cover bg-center opacity-30"></div>
                     <div className="text-center m-12">
 
-                        <h1 className='font-bold text-blue-600 text-3xl'>Contact <span className='text-blue-800'>& Wrok Together</span></h1>
+                        <h1 className='font-bold text-blue-600 text-3xl'>Contact <span className='text-blue-800'>& Work Together</span></h1>
 
                     </div>
 
