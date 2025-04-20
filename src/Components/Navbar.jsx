@@ -66,10 +66,10 @@ const Navbar = () => {
               </li>
             ))}
             <div className="mt-4 flex justify-center space-x-4 lg:mt-0 lg:justify-end">
-              <Link to={'mailto:alikhan9327224@gmail.com'} target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-600">
+              <Link to={'mailto:alikhandevs@gmail.com'} target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-600">
                 <FaEnvelope size={24} />
               </Link>
-              <Link to="https://www.linkedin.com/in/ali-khan-972758316?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-600">
+              <Link to="https://www.linkedin.com/in/alikhan-devs" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-600">
                 <FaLinkedin size={24} />
               </Link>
               <Link to="tel:+923429327224" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-600">
