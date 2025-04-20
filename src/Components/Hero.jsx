@@ -121,7 +121,7 @@ const Hero = () => {
                             <FaGithub size="2em" className="text-white hover:text-black hover:bg-white" />
                         </a>
 
-                        <a href="https://www.linkedin.com/in/ali-khan-972758316?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/alikhan-devs" target="_blank" rel="noopener noreferrer">
                             <FaLinkedin size="2em" className="text-white hover:text-blue-700 hover:bg-white" />
                         </a>
                         </div>
@@ -233,7 +233,7 @@ const Hero = () => {
 
                             <div className="flex flex-col items-center p-4 bg-blue-600 text-white rounded-lg shadow-lg">
                                 <FaEnvelope className="text-2xl text-center" />
-                                <Link to={'mailto:alikhan9327224@gmail.com'} className="mt-2 text-center hover:underline hover:decoration-black transition duration-3 ease underline decoration-white" target="_blank" rel="noopener noreferrer" >alikhan9327224@gmail.com</Link>
+                                <Link to={'mailto:alikhandevs@gmail.com'} className="mt-2 text-center hover:underline hover:decoration-black transition duration-3 ease underline decoration-white" target="_blank" rel="noopener noreferrer" >alikhan9327224@gmail.com</Link>
                             </div>
 
                             <div className="flex flex-col items-center p-4 bg-blue-600 text-white rounded-lg shadow-lg">
