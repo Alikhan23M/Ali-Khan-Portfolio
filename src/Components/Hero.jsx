@@ -233,7 +233,7 @@ const Hero = () => {
 
                             <div className="flex flex-col items-center p-4 bg-blue-600 text-white rounded-lg shadow-lg">
                                 <FaEnvelope className="text-2xl text-center" />
-                                <Link to={'mailto:alikhandevs@gmail.com'} className="mt-2 text-center hover:underline hover:decoration-black transition duration-3 ease underline decoration-white" target="_blank" rel="noopener noreferrer" >alikhan9327224@gmail.com</Link>
+                                <Link to={'mailto:alikhandevs@gmail.com'} className="mt-2 text-center hover:underline hover:decoration-black transition duration-3 ease underline decoration-white" target="_blank" rel="noopener noreferrer" >alikhandevs@gmail.com</Link>
                             </div>
 
                             <div className="flex flex-col items-center p-4 bg-blue-600 text-white rounded-lg shadow-lg">
