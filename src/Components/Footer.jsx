@@ -30,7 +30,7 @@ const Footer = () => {
         <div className="mb-6 md:mb-0 ">
           <h2 className="text-2xl font-bold mb-4">Contact Information</h2>
           <p className="mb-2 cursor-pointer"><FaEnvelope className="text-2xl text-center" />
-          <Link to={'mailto:alikhan9327224@gmail.com'} className="mt-2 text-center hover:underline hover:decoration-black transition duration-3 ease underline decoration-white" target="_blank" rel="noopener noreferrer" >alikhan9327224@gmail.com</Link></p>
+          <Link to={'mailto:alikhandevs@gmail.com'} className="mt-2 text-center hover:underline hover:decoration-black transition duration-3 ease underline decoration-white" target="_blank" rel="noopener noreferrer" >alikhandevs@gmail.com</Link></p>
           <p className="mb-2 cursor-pointer"><FaPhone className="text-2xl text-center"/><Link to={'tel:+923429327224'} className=" mt-2 text-center hover:underline hover:decoration-black transition duration-3 ease underline decoration-white" target="_blank" rel="noopener noreferrer" >+92 342 9327 224</Link></p>
           <p className="mb-2 cursor-pointer"><FaMapMarkerAlt className="text-2xl text-center"/>
           <Link to={"https://maps.app.goo.gl/7CS2ufEVFA1ty8mm9"} className="mt-2 text-center hover:underline hover:decoration-black transition duration-3 ease underline decoration-white" target="_blank" rel="noopener noreferrer" >Rashakai / Nowshera</Link></p>
@@ -38,10 +38,10 @@ const Footer = () => {
         <div>
           <h2 className="text-2xl font-bold mb-4">Follow Me</h2>
           <div className="flex space-x-4">
-            <a href="https://github.com/Alikhan23M" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/alikhan-devs" target="_blank" rel="noopener noreferrer">
               <FaGithub className="text-2xl hover:text-black hover:bg-white" />
             </a>
-            <a href="https://www.linkedin.com/in/ali-khan-972758316?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/alikhan-devs" target="_blank" rel="noopener noreferrer">
               <FaLinkedin className="text-2xl hover:text-blue-600 hover:bg-white" />
             </a>
           </div>
